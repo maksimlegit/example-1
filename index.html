@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="effects">
+    <div class="container">
+      <div class="effects__row">
+        <div @[blockEvent]="showText1 = !showText1" @[blockevent2]="showText1 = false" class="effects__item effects-item">
+          <div class="effects-item__body">
+            <p class="effects-item__text">Исчезновение пчел — это глобальная проблема</p>
+            <svg class="effects-item__arrow" width="30" height="93" viewBox="0 0 30 93" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg__richt"><path d="M13.5858 91.8121C14.3668 92.5932 15.6332 92.5932 16.4142 91.8121L29.1421 79.0842C29.9232 78.3031 29.9232 77.0368 29.1421 76.2558C28.3611 75.4747 27.0948 75.4747 26.3137 76.2558L15 87.5695L3.68629 76.2558C2.90524 75.4747 1.63891 75.4747 0.857864 76.2558C0.0768158 77.0368 0.0768158 78.3031 0.857864 79.0842L13.5858 91.8121ZM13 0L13 90.3979H17L17 0L13 0Z"></path></svg>
+          </div>
+          <img class="effects-item__image" src="https://essen888.github.io/bieneN/img/block1.png" alt="">
+        </div>
+        <p class="effects__text effects__text--1" v-if="showText1">{{text1}}</p>
+        <div @[blockEvent]="showText2 = !showText2" @[blockevent2]="showText2 = false" class="effects__item effects-item">
+          <div class="effects-item__body">
+            <p class="effects-item__text">Почему вымирают пчелы</p>
+            <svg class="effects-item__arrow" width="30" height="93" viewBox="0 0 30 93" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg__richt"><path d="M13.5858 91.8121C14.3668 92.5932 15.6332 92.5932 16.4142 91.8121L29.1421 79.0842C29.9232 78.3031 29.9232 77.0368 29.1421 76.2558C28.3611 75.4747 27.0948 75.4747 26.3137 76.2558L15 87.5695L3.68629 76.2558C2.90524 75.4747 1.63891 75.4747 0.857864 76.2558C0.0768158 77.0368 0.0768158 78.3031 0.857864 79.0842L13.5858 91.8121ZM13 0L13 90.3979H17L17 0L13 0Z"></path></svg>
+          </div>
+          <img class="effects-item__image" src="https://essen888.github.io/bieneN/img/block2.png" alt="">
+        </div>
+        <p class="effects__text effects__text--2" v-if="showText2">{{text2}}</p>
+      </div>
+      <div class="effects__row">
+        <div @[blockEvent]="showText3 = !showText3" @[blockevent2]="showText3 = false" class="effects__item effects-item">
+          <div class="effects-item__body">
+            <p class="effects-item__text">Численность пчелиных колоний</p>
+            <svg class="effects-item__arrow" width="30" height="93" viewBox="0 0 30 93" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg__richt"><path d="M13.5858 91.8121C14.3668 92.5932 15.6332 92.5932 16.4142 91.8121L29.1421 79.0842C29.9232 78.3031 29.9232 77.0368 29.1421 76.2558C28.3611 75.4747 27.0948 75.4747 26.3137 76.2558L15 87.5695L3.68629 76.2558C2.90524 75.4747 1.63891 75.4747 0.857864 76.2558C0.0768158 77.0368 0.0768158 78.3031 0.857864 79.0842L13.5858 91.8121ZM13 0L13 90.3979H17L17 0L13 0Z"></path></svg>
+          </div>
+          <img class="effects-item__image" src="https://essen888.github.io/bieneN/img/block3.png" alt="">
+        </div>
+        <p class="effects__text effects__text--3" v-if="showText3">{{text3}}</p>
+        <div @[blockEvent]="showText4 = !showText4" @[blockevent2]="showText4 = false" class="effects__item effects-item">
+          <div class="effects-item__body">
+            <p class="effects-item__text">Вымирание пчел грозит экологической катастрофой</p>
+            <svg class="effects-item__arrow" width="30" height="93" viewBox="0 0 30 93" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg__richt"><path d="M13.5858 91.8121C14.3668 92.5932 15.6332 92.5932 16.4142 91.8121L29.1421 79.0842C29.9232 78.3031 29.9232 77.0368 29.1421 76.2558C28.3611 75.4747 27.0948 75.4747 26.3137 76.2558L15 87.5695L3.68629 76.2558C2.90524 75.4747 1.63891 75.4747 0.857864 76.2558C0.0768158 77.0368 0.0768158 78.3031 0.857864 79.0842L13.5858 91.8121ZM13 0L13 90.3979H17L17 0L13 0Z"></path></svg>
+          </div>
+          <img class="effects-item__image" src="https://essen888.github.io/bieneN/img/block4.png" alt="">
+        </div>
+        <p class="effects__text effects__text--4" v-if="showText4">{{text4}}</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Balsamiq Sans", cursive;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.effects {
+  padding: 100px 0;
+  background-image: url(https://essen888.github.io/bieneN/img/Unionbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.effects__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px -7.5px;
+}
+
+.effects__item {
+  width: calc(50% - 15px);
+  margin: 10px 7.5px;
+  cursor: pointer;
+}
+
+.effects-item {
+  position: relative;
+  color: #e6e7e8;
+}
+
+.effects-item__body {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.effects-item__text {
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.effects-item__arrow {
+  fill: currentColor;
+  width: 34px;
+  height: 52px;
+}
+
+.effects-item:hover .effects-item__arrow {
+  fill: #0fd850;
+}
+
+.effects__text {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.effects__text--1 {
+  background: linear-gradient(90deg, #0fd850 0%, #f9f047 100%);
+}
+
+.effects__text--2 {
+  background: linear-gradient(90deg, #f83600 0%, #f9d423 100%);
+}
+
+.effects__text--3 {
+  background: linear-gradient(
+    90deg,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+}
+
+.effects__text--4 {
+  background: linear-gradient(90deg, #0fd850 0%, #f9f047 100%);
+}
+
+@media (min-width: 801px) {
+  .effects__text {
+    order: 2;
+  }
+}
+
+@media (max-width: 800px) {
+  .effects__row {
+    margin: -10px 0;
+  }
+  .effects__item {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .effects-item__body {
+    padding: 10px;
+  }
+  .effects-item__text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .effects-item__text {
+    font-size: 12px;
+  }
+}
